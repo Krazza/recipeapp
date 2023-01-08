@@ -1,0 +1,9 @@
+nav ul{
+    display: flex;
+    column-gap:2vw;
+    list-style: none;
+}
+
+nav li{
+    font-size: 1.3rem;
+}

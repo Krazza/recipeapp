@@ -1,0 +1,10 @@
+.recipeList{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    column-gap: 4vw;
+    row-gap: 6vh;
+}
