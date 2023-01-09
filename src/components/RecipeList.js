@@ -6,19 +6,32 @@ import "./RecipeList.css";
 
 function RecipeList()
 {
-    const [data, setData] = useState([]);//search by includes
+    const [data, setData] = useState([]);
+    const [search, setSearch] = useState("");
 
     useEffect(() => 
     { 
         axios.get("http://localhost:3001/savedrecipies").then(res => setData(res.data));
     }, []);
 
+    const recipeFilter = data.filter(recipe =>
+    recipe.name.toLowerCase().includes(search.toLocaleLowerCase()));
+    const filteredRecipeData = recipeFilter.map(recipe => <RecipeEntry key={recipe.id} id={recipe.id} 
+    name={recipe.name} flag={recipe.flag} image={recipe.image}/>);
+
     return(
-        <div className="recipeList">
-            { data.map(recipe => <RecipeEntry key={recipe.id} id={recipe.id} 
-            name={recipe.name} flag={recipe.flag} image={recipe.image}/>) }
+        <div className="anotherOne">
+            <input type="text" placeholder="Search" onChange={Search}/>
+            <div className="recipeList">
+                {filteredRecipeData}
+            </div>
         </div>
     );
+
+    function Search(event)
+    {
+        setSearch(event.target.value);
+    }
 }
 
 export default RecipeList;

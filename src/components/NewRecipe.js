@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import "../components/NewRecipe.css";
 
 function NewRecipe()
 {
@@ -79,57 +80,49 @@ function NewRecipe()
     <div className="formContainer">
         <h2>Add a new recipe</h2>
         <form>
-            <label>
-                {" "}
-                Name:
-                <input required type="text" name="name" id="name" onChange={inputHandler}/>
+            <label for="name">
+                Name:<input type="text" name="name" id="name" onChange={inputHandler} required/>
             </label>
-            <label>
-                {" "}
-                Author:
-                <input required type="text" name="author" id="author" onChange={inputHandler}/>
-        </label>
-        <label className="form-input-title">
-            {" "}
-            Recipe is from:
-            <select required name="country" id="country" onChange={countryPickHandler}>
-                {countries[0].map(country => <option value={country} key={country}> {country} </option>)}
-            </select>
-        </label>
-        <label>
-            Description:
-            <textarea required name="description" id="description" onChange={inputHandler}></textarea>
-        </label>
-        <label>
-            Image:
-            <input required type="url" name="image" id="image" onChange={inputHandler}/>
-        </label>
-        <label>
-            Ingredients:
+            <label for="author">
+                Author:<input type="text" name="author" id="author" onChange={inputHandler} required/>
+            </label>
+            <label for="country">
+                Recipe is from:
+                <select name="country" id="country" onChange={countryPickHandler} required>
+                    {countries[0].map(country => <option value={country} key={country}> {country} </option>)}
+                </select>
+            </label>
+            <label for="description">
+                Description:<textarea name="description" id="descriptionArea" onChange={inputHandler} required></textarea>
+            </label>
+            <label for="image">
+                Image:<input type="url" name="image" id="image" onChange={inputHandler} required/>
+            </label>
+            <label id="ingredientLabel">
+                <span>Ingredients:</span>
             {ingredients.map((ingredient, index) => 
-                <div className="ingredients-field" key={index}>
-                    <div className="one-input">
-                        <label className="form-input-title">
+                <div key={index} id="ingredientBox">
+                    <div>
+                        <label>
                             Ingredient:
-                            <input type="text" name="ingredient" id="ingredient" onChange={(e) => ingredientsInputHandler(e, index)}/>
+                            <input type="text" name="ingredient" id="ingredient" onChange={(e) => ingredientsInputHandler(e, index)} required/>
                         </label>
                     </div>
-                    <div className="one-input">
-                        <label className="form-input-title">
+                    <div>
+                        <label>
                             Quantity:
-                            <input type="text" name="quantity" id="quantity" onChange={(e) => inputHandler(e, index)}/>
+                            <input type="text" name="quantity" id="quantity" onChange={(e) => inputHandler(e, index)} required/>
                     </label>
                     </div>
                 </div>)}
-            <button className="addIngredients-btn" onClick={newIngredientsField}>Add</button>
-        </label>
-        <label>
-            Directions:
-            <textarea required name="directions" id="directions" onChange={inputHandler}></textarea>
-        </label>
-        <button className="post-btn" type="submit" id="submit" onClick={postToJSONServer}>
-            Post recipe 
-        </button>
+            <button className="myBttnClass" onClick={newIngredientsField}>ADD INGREDIENT</button>
+            </label>
+            <label for="directionsLabel">
+                Directions:
+                <textarea name="directionsLabel" id="directionsLabel" onChange={inputHandler} required></textarea>
+            </label>
+            <button className="postBttn" type="submit" id="submit" onSubmit={postToJSONServer}>
+            POST RECIPE</button>
         </form>
     </div>
     );

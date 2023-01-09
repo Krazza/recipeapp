@@ -1,3 +1,91 @@
 .formContainer{
-    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: fit-content;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 2vh;
+}
+
+.formContainer h2{
+    padding-top: 4vh;
+}
+
+form{
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+input, select, textarea{
+    height: 6vh;
+    width: 24vw;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 12px;
+}
+
+#ingredientBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+label{
+    display: grid;
+}
+
+span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#ingredientLabel{
+    font-size: 1rem;
+}
+
+.myBttnClass{
+    height: 4vh;
+    width: 12vw;
+    border-radius: 12px;
+    border-width: 0;
+    margin-left: 25%;
+    margin-top: 5%;
+    font-weight: bold;
+    background-color: #1B1F22;
+    color: white;
+}
+
+.postBttn{
+    height: 7vh;
+    width: 18vw;
+    border-radius: 12px;
+    border-width: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #1B1F22;
+    color: white;
+    text-decoration: underline;
+    text-decoration: underline;
+    text-decoration-color: #c8663f;
+    text-decoration-thickness: 4px;
+}
+
+.anotherOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.anotherOne input{
+    padding-left: 1%;
 }
