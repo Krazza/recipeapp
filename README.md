@@ -6,7 +6,7 @@
 
 ### Setup
 
-To run this project, use following commangs:
+To run this project, use following commands:
 
 ```
 $ npm run clownfiesta
