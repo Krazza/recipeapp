@@ -1,4 +1,3 @@
-import React from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -12,13 +11,13 @@ function RecipeSingle()
     useEffect(() => 
     {
         axios.get(`http://localhost:3001/savedrecipies/${params.recipesingle}`).then(res => setRecipieDetails(res.data));
-    }, []);
+    }, [params]);
 
     return (
       <div className="gridWrap">
       <div className="cardGrid">
       <h2>{recipeEntry.name}</h2>
-        <img id="flagSingle" src={recipeEntry.flag}/>
+        <img id="flagSingle" src={recipeEntry.flag} alt="flags are cool"/>
         <img id="pic" src={recipeEntry.image} alt={recipeEntry.name} />
         <div id="ingr">
           <h3>Ingredient : Quantity</h3>

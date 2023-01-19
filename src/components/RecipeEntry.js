@@ -1,4 +1,3 @@
-import React from "react";
 import "../components/RecipeEntry.css";
 import { Link } from "react-router-dom";
 

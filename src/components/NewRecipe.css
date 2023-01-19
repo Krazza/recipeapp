@@ -9,15 +9,11 @@ form{
     justify-content: space-around;
     align-items: center;
     row-gap: 2vh;
+    padding: 4vh 0 4vh 0;
 }
 
 .formContainer h2{
     padding-top: 4vh;
-}
-
-form{
-    padding-top: 4vh;
-    padding-bottom: 4vh;
 }
 
 input, select, textarea{
@@ -25,6 +21,7 @@ input, select, textarea{
     width: 24vw;
     border: 0 solid;
     border-radius: 12px;
+    padding-left: 2%;
 }
 
 #ingredientBox{

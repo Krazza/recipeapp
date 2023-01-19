@@ -1,7 +1,5 @@
-import React from "react";
 import VideoBanner from "./VideoBanner";
 import "../components/Home.css";
-import "./HomeCard.js"
 import HomeCard from "./HomeCard.js";
 
 function Home()

@@ -39,7 +39,7 @@
 
 .videoBanner{
     position: absolute;
-    left: 0px;
+    left: 0;
     width: 100vw;
     height: inherit;
     object-fit: cover;
