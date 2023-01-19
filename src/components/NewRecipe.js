@@ -80,22 +80,22 @@ function NewRecipe()
     <div className="formContainer">
         <h2>Add a new recipe</h2>
         <form>
-            <label for="name">
+            <label htmlFor="name">
                 Name:<input type="text" name="name" id="name" onChange={inputHandler} required/>
             </label>
-            <label for="author">
+            <label htmlFor="author">
                 Author:<input type="text" name="author" id="author" onChange={inputHandler} required/>
             </label>
-            <label for="country">
+            <label htmlFor="country">
                 Recipe is from:
                 <select name="country" id="country" onChange={countryPickHandler} required>
                     {countries[0].map(country => <option value={country} key={country}> {country} </option>)}
                 </select>
             </label>
-            <label for="description">
+            <label htmlFor="description">
                 Description:<textarea name="description" id="descriptionArea" onChange={inputHandler} required></textarea>
             </label>
-            <label for="image">
+            <label htmlFor="image">
                 Image:<input type="url" name="image" id="image" onChange={inputHandler} required/>
             </label>
             <label id="ingredientLabel">
@@ -117,7 +117,7 @@ function NewRecipe()
                 </div>)}
             <button className="myBttnClass" onClick={newIngredientsField}>ADD INGREDIENT</button>
             </label>
-            <label for="directionsLabel">
+            <label htmlFor="directionsLabel">
                 Directions:
                 <textarea name="directionsLabel" id="directionsLabel" onChange={inputHandler} required></textarea>
             </label>

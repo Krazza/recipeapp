@@ -1,9 +1,7 @@
 .homeCard{
     background-color: #1B1F22;
-    border-color: #1B1F22;
     border-radius: 12px;
-    border-width: 8px;
-    border-style: solid;
+    border: 8px solid #1B1F22;
     width: 30vh;
     display: flex;
     flex-direction: column;
@@ -14,8 +12,6 @@
 }
 
 .homeCard a{
-    text-decoration: underline;
-    text-decoration-color: #c8663f;
-    text-decoration-thickness: 4px;
+    text-decoration: underline #c8663f 4px;
     color: white;
 }

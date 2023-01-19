@@ -15,9 +15,7 @@
     column-gap: 2vw;
     row-gap: 3vh;
     background-color: #1B1F22;
-    border-style: solid;
-    border-width: 35px;
-    border-color: #1B1F22;
+    border: 35px solid #1B1F22;
     border-radius: 12px;
     font-family: Arial, Helvetica, sans-serif;
 }

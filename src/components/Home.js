@@ -15,7 +15,6 @@ function Home()
                     <HomeCard title="Browse recipies" text="Find your favourite recipes in this collection.You can search recipies based on name or country." linkText="All recipies" link="recipelist"/>
                     <HomeCard title="Add recipies" text="Recipies from your country is missing? Add one!" linkText="Add recipies" link="addrecipe"/>
                     <HomeCard external={true} title="Want to know more about our projects?" text="Visit our programme home page" linkText="Business College Helsinki"/>
-                    
                 </div>
             </div>
         </div>

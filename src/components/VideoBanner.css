@@ -18,9 +18,7 @@
 }
 
 .thingsContainer a{
-    text-decoration: underline;
-    text-decoration-color: white;
-    text-decoration-thickness: 4px;
+    text-decoration: underline white 4px;
     color: #c8663f;
     font-size: 1.4rem;
     font-weight: 800;
