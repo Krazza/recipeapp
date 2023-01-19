@@ -71,7 +71,6 @@ function NewRecipe()
             ingredients: entry.ingredients,
             directions: entry.directions,
         });
-
         window.location.reload();
     }
 
@@ -120,7 +119,7 @@ function NewRecipe()
                 Directions:
                 <textarea name="directionsLabel" id="directionsLabel" onChange={inputHandler} required></textarea>
             </label>
-            <button className="postBttn" type="submit" id="submit" onSubmit={postToJSONServer}>
+            <button className="postBttn" type="submit" id="submit" onClick={postToJSONServer}>
             POST RECIPE</button>
         </form>
     </div>

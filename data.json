@@ -153,6 +153,38 @@
         "Add the scrambled eggs, fish sauce, brown sugar, and red pepper flakes. Stir-fry until the ingredients are well combined and the noodles are coated with the sauce, about 2 minutes.",
         "Serve the pad Thai hot, garnished with additional ground peanuts and lime wedges, if desired."
       ]
+    },
+    {
+      "name": "Good soup",
+      "author": "Margit",
+      "country": "Estonia",
+      "flag": "https://flagcdn.com/ee.svg",
+      "description": "Yum",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1074500_11-ee0d41a.jpg",
+      "ingredients": [
+        {
+          "ingredient": "SOup",
+          "quantity": ""
+        }
+      ],
+      "directions": "",
+      "id": 4
+    },
+    {
+      "name": "Super good soup",
+      "author": "Vlad",
+      "country": "Russia",
+      "flag": "https://flagcdn.com/ru.svg",
+      "description": "Hi",
+      "image": "https://kristineskitchenblog.com/wp-content/uploads/2022/02/minestrone-soup-recipe-22.jpg",
+      "ingredients": [
+        {
+          "ingredient": "Soup",
+          "quantity": ""
+        }
+      ],
+      "directions": "",
+      "id": 5
     }
   ]
 }
