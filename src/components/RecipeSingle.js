@@ -1,15 +1,15 @@
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
 import "./RecipeSingle.css";
 
 function RecipeSingle()
 {
-    const [recipeEntry, setRecipieDetails] = useState({});
-    const params = useParams();
-
-    useEffect(() => 
-    {
+  const [recipeEntry, setRecipieDetails] = useState({});
+  const params = useParams();
+  
+  useEffect(() => 
+  {
         axios.get(`http://localhost:3001/savedrecipies/${params.recipesingle}`).then(res => setRecipieDetails(res.data));
     }, [params]);
 
