@@ -77,7 +77,7 @@ function NewRecipe()
     return (
     <div className="formContainer">
         <h2>Add a new recipe</h2>
-        <form>
+        <form onSubmit={postToJSONServer}> 
             <label htmlFor="name">
                 Name:<input type="text" name="name" id="name" onChange={inputHandler} required/>
             </label>
@@ -119,7 +119,7 @@ function NewRecipe()
                 Directions:
                 <textarea name="directionsLabel" id="directionsLabel" onChange={inputHandler} required></textarea>
             </label>
-            <button className="postBttn" type="submit" id="submit" onClick={postToJSONServer}>
+            <button className="postBttn" type="submit" id="submit">
             POST RECIPE</button>
         </form>
     </div>
