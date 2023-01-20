@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import "../components/Header.css";
 import Nav from "./Nav.js";
@@ -13,3 +14,4 @@ function Header()
 }
 
 export default Header;
+

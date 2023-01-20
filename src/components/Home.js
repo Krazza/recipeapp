@@ -1,3 +1,4 @@
+import React from 'react';
 import VideoBanner from "./VideoBanner";
 import "../components/Home.css";
 import HomeCard from "./HomeCard.js";
