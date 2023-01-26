@@ -17,7 +17,6 @@ function RecipeList()
     recipe.name.toLowerCase().includes(search.toLocaleLowerCase()));
     const filteredRecipeData = recipeFilter.map(recipe => <RecipeEntry key={recipe.id} id={recipe.id} 
     name={recipe.name} flag={recipe.flag} image={recipe.image}/>);
-    console.log(filteredRecipeData);
 
     return(
         <div className="anotherOne">

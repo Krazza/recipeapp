@@ -30,7 +30,8 @@ HomeCard.propTypes = {
     title : PropTypes.string,
     text : PropTypes.string,
     linkText : PropTypes.string,
-    link : PropTypes.string
+    link : PropTypes.string,
+    external : PropTypes.bool
 }
 
 export default HomeCard;
