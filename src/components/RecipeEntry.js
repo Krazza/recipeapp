@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 import "../components/RecipeEntry.css";
 
@@ -13,5 +14,13 @@ const RecipeEntry = (props) => {
     </div>
     );
 };
+
+RecipeEntry.propTypes = {
+    key : PropTypes.string,
+    image :  PropTypes.string,
+    flag : PropTypes.string,
+    id : PropTypes.number,
+    name : PropTypes.string
+}
 
 export default RecipeEntry;

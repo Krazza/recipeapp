@@ -4,7 +4,7 @@ import "../components/Footer.css";
 function Footer()
 {
     return(
-        <footer>"Hello world!;"</footer>
+        <footer>"Hello world!"</footer>
     );
 }
 
