@@ -6,7 +6,7 @@ import "../components/RecipeEntry.css";
 
 const RecipeEntry = (props) => {
     return (
-        <div className="recipeCard">
+        <div className="recipeCard" data-testid = {props.testid}>
         <div id="overlay"/>
         <img id="recipeImg" src={props.image} alt="meaningful text"></img>
         <img id="flag" src={props.flag} alt="meaningful text"/>

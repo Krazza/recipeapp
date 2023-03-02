@@ -5,9 +5,9 @@ import "../components/VideoBanner.css";
 function VideoBanner()
 {
     return(
-        <div className="bannerContainer">
+        <div className="bannerContainer" data-testid="bannerContainer">
             <div className="thingsContainer">
-                <h1>World of recepies</h1>
+                <h1 id="welcomeMessage">World of recepies</h1>
                 <h3>Explore the best side of the world</h3>
                 <Link className="bannerButton" to="recipelist">Check out all recipies</Link>
             </div>
