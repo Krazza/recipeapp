@@ -21,6 +21,9 @@
     "eject": "react-scripts eject",
     "clownfiesta": "json-server -p3001 --watch data.json"
   },
+  "jest": {
+    "resetMocks" : false
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
