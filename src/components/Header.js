@@ -7,7 +7,7 @@ function Header()
 {
     return (
         <header>
-            <Link to="/"><h2>Cooking internationally</h2></Link>
+            <Link to="/"><h2>{"Cooking internationally"}</h2></Link>
             <Nav/>
         </header>
     );
